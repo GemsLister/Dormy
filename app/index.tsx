@@ -1,9 +1,5 @@
-import { Text, View } from "react-native";
-import "../global.css";
+import Login from "@/views/auth/LoginView";
+
 export default function Index() {
-  return (
-    <View>
-      <Text className="font-bold">Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
+  return <Login />;
 }
