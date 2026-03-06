@@ -5,12 +5,20 @@ module.exports = {
     "./App.tsx",
     "./components/**/*.{js,jsx,ts,tsx}",
     "./app/**/*.{js,jsx,ts,tsx}",
+    "./views/**/*.{js,jsx,ts,tsx}",
   ],
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
       colors: {
         charming_orange: "#EE854D",
+      },
+      fontFamily: {
+        "nunito-light": ["Nunito-Light"],
+        nunito: ["Nunito-Regular"],
+        "nunito-medium": ["Nunito-Medium"],
+        "nunito-semi-bold": ["Nunito-SemiBold"],
+        "nunito-bold": ["Nunito-Bold"],
       },
     },
   },
