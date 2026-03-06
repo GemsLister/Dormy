@@ -1,5 +1,5 @@
-import Login from "@/views/auth/LoginView";
+import LoginView from "../views/auth/login";
 
 export default function Index() {
-  return <Login />;
+  return <LoginView />;
 }
