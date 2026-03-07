@@ -2,12 +2,11 @@ import AuthContainer from "@/components/container/AuthContainer";
 import PrimaryButton from "@/components/ui/button/PrimaryButton";
 import SecondaryButton from "@/components/ui/button/SecondaryButton";
 import { Image } from "expo-image";
-import { useRouter } from "expo-router";
+import { Link } from "expo-router";
 import { Text, TextInput, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function LoginView() {
-  const router = useRouter();
   return (
     <AuthContainer>
       <SafeAreaView>
@@ -43,12 +42,11 @@ export default function LoginView() {
             />
           </View>
         </View>
-
         <View className="gap-5">
-          <PrimaryButton>Login</PrimaryButton>
-          <SecondaryButton onPress={() => router.push("/register")}>
-            Register
-          </SecondaryButton>
+          <PrimaryButton title="Login" />
+          <Link href={"/register"} asChild>
+            <SecondaryButton title="Register" />
+          </Link>
         </View>
       </View>
     </AuthContainer>
