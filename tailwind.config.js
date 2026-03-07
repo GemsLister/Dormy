@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        charming_orange: "#EE854D",
+        "charming-orange": "#EE854D",
+        "pale-peach": "#FBE9DA",
       },
       fontFamily: {
         "nunito-light": ["Nunito-Light"],
