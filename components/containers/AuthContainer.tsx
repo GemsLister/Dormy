@@ -9,7 +9,7 @@ export default function AuthContainer({ children }: PropsWithChildren) {
       <SafeAreaView>
         <Image
           source={require("../../assets/dormy-logo-text.png")}
-          style={{ height: 90, width: 210 }}
+          style={{ height: 100, width: 240 }}
           contentFit="contain"
         />
       </SafeAreaView>
