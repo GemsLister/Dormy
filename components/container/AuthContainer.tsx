@@ -1,13 +1,9 @@
-import React from "react";
+import { PropsWithChildren } from "react";
 import { View } from "react-native";
 
-export default function AuthContainer({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function AuthContainer({ children }: PropsWithChildren) {
   return (
-    <View className="flex-1 bg-slate-200 justify-center items-center">
+    <View className="flex-1 bg-slate-100 justify-center items-center">
       {children}
     </View>
   );
