@@ -1,13 +1,17 @@
 import { TextInput, View } from "react-native";
 
-export default function Password() {
+type PlaceholderProps = {
+  placeholder: string;
+};
+
+export default function Password({ placeholder }: PlaceholderProps) {
   return (
     <View>
       <TextInput
         keyboardType="default"
-        className="font-nunito-semi-bold text-lg border-b border-b-gray-400 text-gray-600"
-        placeholder="Enter Your password"
+        className="font-nunito-semi-bold text-[18px] border-b border-b-gray-400 text-gray-600"
         secureTextEntry={true}
+        placeholder={placeholder}
       />
     </View>
   );
